@@ -1,0 +1,653 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ObsidianGrove | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              secondary: "#c8c6c6",
+              "on-surface": "#e5e2e1",
+              "primary-fixed": "#d0e9d4",
+              "surface-variant": "#353535",
+              "on-primary": "#203527",
+              "primary-fixed-dim": "#b4cdb8",
+              "surface-bright": "#393939",
+              "surface-container-low": "#1c1b1b",
+              "on-primary-container": "#819986",
+              outline: "#8d928c",
+              "on-primary-fixed": "#0b2013",
+              "on-background": "#e5e2e1",
+              "surface-dim": "#131313",
+              "surface-container-lowest": "#0e0e0e",
+              "primary-container": "#1b3022",
+              "on-secondary": "#303030",
+              "inverse-on-surface": "#313030",
+              background: "#131313",
+              primary: "#b4cdb8",
+              "on-secondary-fixed-variant": "#474747",
+              "tertiary-fixed": "#e3e2e2",
+              "secondary-fixed-dim": "#c8c6c6",
+              "secondary-fixed": "#e4e2e2",
+              "inverse-primary": "#4d6453",
+              surface: "#131313",
+              "on-tertiary-container": "#939393",
+              tertiary: "#c7c6c6",
+              "on-error": "#690005",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-fixed": "#1b1c1c",
+              "tertiary-container": "#2b2c2c",
+              "on-surface-variant": "#c3c8c1",
+              "outline-variant": "#434843",
+              "on-secondary-fixed": "#1b1c1c",
+              "surface-tint": "#b4cdb8",
+              "surface-container-highest": "#353535",
+              "error-container": "#93000a",
+              "surface-container-high": "#2a2a2a",
+              "surface-container": "#20201f",
+              error: "#ffb4ab",
+              "tertiary-fixed-dim": "#c7c6c6",
+              "on-tertiary-fixed-variant": "#464747",
+              "on-primary-fixed-variant": "#364c3c",
+              "on-secondary-container": "#b9b8b8",
+              "inverse-surface": "#e5e2e1",
+              "secondary-container": "#494949",
+              "on-tertiary": "#2f3031",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .no-line-policy {
+        border: none !important;
+      }
+      .tonal-shift-only {
+        box-shadow: none !important;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary"
+  >
+    <!-- TopNavBar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-[#131313]/70 backdrop-blur-xl no-line-policy tonal-shift-only"
+    >
+      <div
+        class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto"
+      >
+        <div
+          class="text-2xl font-bold text-[#e5e2e1] tracking-tighter font-headline"
+        >
+          ObsidianGrove
+        </div>
+        <div
+          class="hidden md:flex gap-10 items-center font-manrope text-sm tracking-wide uppercase font-semibold"
+        >
+          <a
+            class="text-[#b4cdb8] border-b-2 border-[#b4cdb8] pb-1 transition-all duration-300"
+            href="#hero"
+            >Hero</a
+          >
+          <a
+            class="text-[#c3c8c1] hover:text-[#e5e2e1] transition-colors hover:text-[#b4cdb8]"
+            href="#projects"
+            >Projects</a
+          >
+          <a
+            class="text-[#c3c8c1] hover:text-[#e5e2e1] transition-colors hover:text-[#b4cdb8]"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
+        <a
+          class="bg-primary text-on-primary px-6 py-2 rounded-full font-semibold transition-transform active:scale-95"
+          href="#"
+          >Resume</a
+        >
+      </div>
+    </nav>
+    <main class="max-w-[1200px] mx-auto px-6">
+      <!-- Hero Section -->
+      <section
+        class="pt-40 pb-24 md:pt-56 md:pb-40 grid grid-cols-1 md:grid-cols-12 gap-12 items-center"
+        id="hero"
+      >
+        <div class="md:col-span-7 z-10">
+          <h2
+            class="text-primary font-headline text-lg tracking-[0.2em] uppercase mb-6"
+          >
+            Full-Stack Architect
+          </h2>
+          <h1
+            class="text-on-surface font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]"
+          >
+            Crafting digital <br /><span
+              class="text-on-surface-variant italic font-medium"
+              >ecosystems</span
+            >
+            with intent.
+          </h1>
+          <p
+            class="text-on-surface-variant text-lg md:text-xl max-w-xl leading-relaxed mb-10"
+          >
+            I am Chris Millard, a web developer focused on building
+            high-performance applications that bridge the gap between organic
+            design and architectural stability.
+          </p>
+          <div class="flex gap-6">
+            <a
+              class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold text-sm tracking-widest uppercase hover:opacity-90 transition-opacity"
+              href="#projects"
+              >View Projects</a
+            >
+            <a
+              class="flex items-center gap-2 text-primary font-bold text-sm tracking-widest uppercase group"
+              href="#contact"
+            >
+              Let's Talk
+              <span
+                class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+        </div>
+        <div class="md:col-span-5 relative">
+          <div
+            class="aspect-[4/5] rounded-xl overflow-hidden bg-surface-container shadow-2xl relative group"
+          >
+            <img
+              alt="Professional profile portrait"
+              class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+              data-alt="Professional headshot of a developer in a modern studio"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuARjj9c3G1oJBWuSVfQWPGesGiJHF_qb5rK14sZ3dQYIOuLhHQHwoHtIae3EZKvucIoynN2v2bvNSa-3bX9jdKq8VrizvXzkpS2gLVTeakNbRii4O-1ZrojRW_WlvcuaSIm5aVgdpLCF_vYqRgV1RphkuTomJO4OL0JGhSFVUzSR218HpYieOYy6_PcYpsRff8-30Ckam6eXselHv0dGkD9qVxC7_YirNwLZbGGHN_POLbsNZFRPDareJJLn4OG9HZQAEPof7WgEI1R"
+            />
+            <div
+              class="absolute inset-0 bg-primary/10 mix-blend-multiply"
+            ></div>
+          </div>
+          <!-- Asymmetric background element -->
+          <div
+            class="absolute -bottom-8 -left-8 w-48 h-48 bg-primary-container -z-10 rounded-xl"
+          ></div>
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section class="py-24 md:py-32">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-10 bg-surface-container-low rounded-xl">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6"
+              >code</span
+            >
+            <h3 class="font-headline text-2xl font-bold mb-4">
+              Web Development
+            </h3>
+            <p class="text-on-surface-variant leading-relaxed">
+              Specializing in React, Node.js, and modern CSS frameworks to
+              create scalable, responsive web solutions from the ground up.
+            </p>
+          </div>
+          <div class="p-10 bg-surface-container-low rounded-xl">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6"
+              >layers</span
+            >
+            <h3 class="font-headline text-2xl font-bold mb-4">UI/UX Design</h3>
+            <p class="text-on-surface-variant leading-relaxed">
+              Focusing on editorial-inspired layouts and tonal depth to deliver
+              user experiences that feel premium and effortless.
+            </p>
+          </div>
+          <div class="p-10 bg-surface-container-low rounded-xl">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6"
+              >speed</span
+            >
+            <h3 class="font-headline text-2xl font-bold mb-4">Optimization</h3>
+            <p class="text-on-surface-variant leading-relaxed">
+              Core Web Vitals and SEO performance-driven development to ensure
+              your project ranks high and loads instantly.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Projects Section -->
+      <section class="py-24 md:py-32" id="projects">
+        <div class="mb-16">
+          <h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-4">
+            Selected Works
+          </h2>
+          <div class="h-1 w-20 bg-primary"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Project 1 -->
+          <div class="group cursor-pointer">
+            <div
+              class="relative overflow-hidden rounded-xl aspect-video mb-6 bg-surface-container"
+            >
+              <img
+                alt="E-commerce Analytics"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Modern dark dashboard with lime green charts"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkS84SMFAcFSoJWAUozUQWJJ8tYnPLVf86Vs_IgfM3Dtw30wBFSO4MbFw5oXjkWag2eT1vxElk42zgPc6yqEEAlwTxpxrNiFyCVoYUS_vG2-UnPknkZtZIhxbtFuN-jq7n2FJRgd4Z0RqRTkfdWpdYak-vMdKgK7PAamEf2zjDuZ3Dw4xaZq9C10MZJG0lyJGMIcIjblj2BZ4KS3uO7E_YSGBZK_GUWowbKiCpDXzFPvpz7N5mqfQp7eznF6S-VuJfWJiuZXTgya9r"
+              />
+              <div
+                class="absolute inset-0 bg-background/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-white text-5xl"
+                  >zoom_in</span
+                >
+              </div>
+            </div>
+            <div class="flex justify-between items-end">
+              <div>
+                <span
+                  class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block"
+                  >Fintech</span
+                >
+                <h3
+                  class="font-headline text-2xl font-bold group-hover:text-primary transition-colors"
+                >
+                  Vortex Analytics
+                </h3>
+              </div>
+              <span
+                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary"
+                >north_east</span
+              >
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="group cursor-pointer md:mt-16">
+            <div
+              class="relative overflow-hidden rounded-xl aspect-video mb-6 bg-surface-container"
+            >
+              <img
+                alt="Social Media Platform"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Mobile app interface with minimalist social feed"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZB3ot6xNOWgROtIpnjcxJkB999H_eruh4d-ceQ2xeWoR0EhJwcLKZKNEr_8jXKMP9lOA0p4-bkz88G0iq2cjF6g2vd60Vp8sveP6goQ9Wze8pcbQoVmVuL8fFX7bWBYEg8uXxnfcZHJ9yRdmtTr3mPtte0yMZax3cee4pE47k4-h4nYvrOnPaKYiaP0OOrkQWwsuWfBKnMVnz8mfJRGVry3-etU6RvH8Zg79O3J1r2PXXxQrriAQTggyIEFEVfQspr7NdYrNzofkr"
+              />
+              <div
+                class="absolute inset-0 bg-background/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-white text-5xl"
+                  >zoom_in</span
+                >
+              </div>
+            </div>
+            <div class="flex justify-between items-end">
+              <div>
+                <span
+                  class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block"
+                  >Mobile</span
+                >
+                <h3
+                  class="font-headline text-2xl font-bold group-hover:text-primary transition-colors"
+                >
+                  Sphere App
+                </h3>
+              </div>
+              <span
+                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary"
+                >north_east</span
+              >
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="group cursor-pointer">
+            <div
+              class="relative overflow-hidden rounded-xl aspect-video mb-6 bg-surface-container"
+            >
+              <img
+                alt="Dev Portfolio"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Code editor background with neon highlights"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx6L0vsReSOMoEGdU_urn0X2KTNvJGm3F66AXeCb6MwfQvUm-HN_Da_h3YOgEZaEes4MFJ22NXr9jXcibPw-rUaxSYXLB1SKHokjWvLpC8MRc0kbHRpC-CpKUTuE0_obAix8d8CHIobKAA9Gv-pVErGFKE4sa450_MryGYSbhlvIiORGZzfgVoMTAYhAmcbxgxkNRvN3FJtK2aPlmMIEV5wSfRYateq7ANv0vO45dl7fBvW25JV4RQqBOa96K_bHtyCkTo7CkHmKOY"
+              />
+              <div
+                class="absolute inset-0 bg-background/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-white text-5xl"
+                  >zoom_in</span
+                >
+              </div>
+            </div>
+            <div class="flex justify-between items-end">
+              <div>
+                <span
+                  class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block"
+                  >Developer Tools</span
+                >
+                <h3
+                  class="font-headline text-2xl font-bold group-hover:text-primary transition-colors"
+                >
+                  Syntax Core
+                </h3>
+              </div>
+              <span
+                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary"
+                >north_east</span
+              >
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="group cursor-pointer md:mt-16">
+            <div
+              class="relative overflow-hidden rounded-xl aspect-video mb-6 bg-surface-container"
+            >
+              <img
+                alt="Branding Identity"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Abstract 3D shapes in a monochromatic forest"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPeL0TIC9YstnCEiab1vvo6j9MYfvYfw_wzR31rElZw6McV9zNlE5PiS_VJPWw1ffV-RUzVIQTjggV1RQ42TCbLU86ZciTegPTRC4tE5qNkk7_q1d0PsCCCw3uKe_E0BnnC8QFs6y0eZZ2w2_EYfNUJclhmQZ0QNvbusyrDOnZQFPLbM0F_WwozmIZ_KskldiqcP8vrlX5n2s47GYXIh59a9--5Pvm4DPQClBwQqgtx7c9SYSqG66a8fu7K9LPgIs7sqBrxJuzahi8"
+              />
+              <div
+                class="absolute inset-0 bg-background/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-white text-5xl"
+                  >zoom_in</span
+                >
+              </div>
+            </div>
+            <div class="flex justify-between items-end">
+              <div>
+                <span
+                  class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block"
+                  >Creative</span
+                >
+                <h3
+                  class="font-headline text-2xl font-bold group-hover:text-primary transition-colors"
+                >
+                  Lumina Studio
+                </h3>
+              </div>
+              <span
+                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary"
+                >north_east</span
+              >
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="group cursor-pointer">
+            <div
+              class="relative overflow-hidden rounded-xl aspect-video mb-6 bg-surface-container"
+            >
+              <div
+                class="w-full h-full bg-surface-container-high flex items-center justify-center p-8"
+              >
+                <span
+                  class="material-symbols-outlined text-surface-variant text-6xl"
+                  >cloud_queue</span
+                >
+              </div>
+              <div
+                class="absolute inset-0 bg-background/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-white text-5xl"
+                  >zoom_in</span
+                >
+              </div>
+            </div>
+            <div class="flex justify-between items-end">
+              <div>
+                <span
+                  class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block"
+                  >Infrastructure</span
+                >
+                <h3
+                  class="font-headline text-2xl font-bold group-hover:text-primary transition-colors"
+                >
+                  Nimbus CI/CD
+                </h3>
+              </div>
+              <span
+                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary"
+                >north_east</span
+              >
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="group cursor-pointer md:mt-16">
+            <div
+              class="relative overflow-hidden rounded-xl aspect-video mb-6 bg-surface-container"
+            >
+              <div
+                class="w-full h-full bg-surface-container-high flex items-center justify-center p-8"
+              >
+                <span
+                  class="material-symbols-outlined text-surface-variant text-6xl"
+                  >auto_awesome</span
+                >
+              </div>
+              <div
+                class="absolute inset-0 bg-background/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-white text-5xl"
+                  >zoom_in</span
+                >
+              </div>
+            </div>
+            <div class="flex justify-between items-end">
+              <div>
+                <span
+                  class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block"
+                  >AI</span
+                >
+                <h3
+                  class="font-headline text-2xl font-bold group-hover:text-primary transition-colors"
+                >
+                  Neural Grove
+                </h3>
+              </div>
+              <span
+                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary"
+                >north_east</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section class="py-24 md:py-32" id="contact">
+        <div
+          class="bg-surface-container-lowest rounded-xl p-8 md:p-16 grid grid-cols-1 lg:grid-cols-2 gap-16"
+        >
+          <div>
+            <h2 class="font-headline text-4xl font-extrabold mb-6">
+              Let's grow <br />something
+              <span class="text-primary">great</span>.
+            </h2>
+            <p class="text-on-surface-variant text-lg mb-12">
+              I am currently accepting new project inquiries. Whether you have a
+              clear vision or just a seed of an idea, let's connect.
+            </p>
+            <div class="space-y-6">
+              <a
+                class="flex items-center gap-4 group"
+                href="mailto:cmillardv77@gmail.com"
+              >
+                <div
+                  class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all"
+                >
+                  <span class="material-symbols-outlined">mail</span>
+                </div>
+                <span
+                  class="text-on-surface font-semibold underline decoration-primary/30 underline-offset-4 group-hover:decoration-primary transition-all"
+                  >cmillardv77@gmail.com</span
+                >
+              </a>
+              <div class="flex gap-4">
+                <a
+                  class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all"
+                  href="#"
+                >
+                  <img
+                    alt="GitHub"
+                    class="w-6 h-6 invert"
+                    data-alt="GitHub logo icon"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxTv0rw99gFtSASLmA5tHnK9_6eihf4DGz7T7Dh-r-GukmHrHsgns0uwQv4wwcImGcEdhmJ5WSo4U_EL62ifQz-WLEkQTT49mCEbyQ_GBfisdepphJ85SQeGH2m0VuliaDG6B8bcbMdsQdVCSy9RvvejR4M1VyhiXGxi-W77ctKdLX6i89VIQr4IdtBLpJhkcWT6yZjzIHbAIJ0UHyXu1XI67TMeYqkYvPrOqN6-eB_r7vOrlKKfO-YBqhOjT1rIB3ZbpVGH4qHDBp"
+                  />
+                </a>
+                <a
+                  class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all"
+                  href="#"
+                >
+                  <img
+                    alt="LinkedIn"
+                    class="w-6 h-6 invert"
+                    data-alt="LinkedIn logo icon"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA49iiSOKM9nIerxFpAMFp-PSpaVe_IpP6qH56plU9UCqr_1Db_20Ig1NCJ5CLXI84PfY0guQXDNUcDybdpXCSELBNXvmlJZRKD1HSvgyf3ioqq1ddke49EFzN79-xU2aybRP28RVgSG8bJPrhhT7bBmgS-BYY7_gE1iMu28MyjfVbGPjeIOGkSZStlpfs60le4U98FNBiK9qfFiJM1phK7EAv0QMf3Rovttsg53sk7eYpQpsHZIvSlOhgPDqrTgYS2QRqXEWgrwXVR"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label
+                  class="text-xs font-bold uppercase tracking-widest text-on-surface-variant"
+                  >Name</label
+                >
+                <input
+                  class="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-on-surface-variant/30"
+                  placeholder="John Doe"
+                  type="text"
+                />
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-xs font-bold uppercase tracking-widest text-on-surface-variant"
+                  >Email</label
+                >
+                <input
+                  class="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-on-surface-variant/30"
+                  placeholder="john@example.com"
+                  type="email"
+                />
+              </div>
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-xs font-bold uppercase tracking-widest text-on-surface-variant"
+                >Subject</label
+              >
+              <input
+                class="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-on-surface-variant/30"
+                placeholder="Project Inquiry"
+                type="text"
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-xs font-bold uppercase tracking-widest text-on-surface-variant"
+                >Message</label
+              >
+              <textarea
+                class="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-on-surface-variant/30"
+                placeholder="Tell me about your project..."
+                rows="5"
+              ></textarea>
+            </div>
+            <button
+              class="w-full bg-primary text-on-primary py-4 rounded-full font-bold uppercase tracking-[0.2em] text-sm hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+              type="submit"
+            >
+              Send Message
+              <span class="material-symbols-outlined">send</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#0e0e0e] w-full py-12 px-8">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto font-inter text-xs text-[#c3c8c1]"
+      >
+        <div class="text-lg font-bold text-[#e5e2e1] font-headline">
+          Obsidian Grove
+        </div>
+        <div class="flex gap-8">
+          <a
+            class="hover:text-[#b4cdb8] transition-colors hover:translate-y-[-2px] transition-transform"
+            href="#"
+            >GitHub</a
+          >
+          <a
+            class="hover:text-[#b4cdb8] transition-colors hover:translate-y-[-2px] transition-transform"
+            href="#"
+            >LinkedIn</a
+          >
+          <a
+            class="hover:text-[#b4cdb8] transition-colors hover:translate-y-[-2px] transition-transform"
+            href="mailto:cmillardv77@gmail.com"
+            >Email</a
+          >
+        </div>
+        <div class="text-center md:text-right">
+          © 2024 Obsidian Grove. Built with Intent.
+        </div>
+      </div>
+    </footer>
+    <!-- Simple Preview Modal Placeholder (Hidden by default) -->
+    <div
+      class="fixed inset-0 z-[100] bg-background/95 backdrop-blur-md hidden flex items-center justify-center p-4"
+      id="preview-modal"
+    >
+      <button
+        class="absolute top-10 right-10 text-on-surface hover:text-primary transition-colors"
+      >
+        <span class="material-symbols-outlined text-4xl">close</span>
+      </button>
+      <div
+        class="max-w-5xl w-full aspect-video rounded-xl overflow-hidden shadow-2xl"
+      >
+        <img
+          alt="Full preview"
+          class="w-full h-full object-cover"
+          data-alt="Full screen project screenshot preview"
+          id="modal-img"
+          src=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
