@@ -147,10 +147,11 @@
     <main class="max-w-[1200px] mx-auto px-6">
       <!-- Hero Section -->
       <section
-        class="pt-40 pb-24 md:pt-56 md:pb-40 grid grid-cols-1 md:grid-cols-12 gap-12 items-center"
+        class="relative pt-40 pb-24 md:pt-56 md:pb-40 grid grid-cols-1 md:grid-cols-12 gap-12 items-center"
         id="hero"
       >
-        <div class="md:col-span-7 z-10">
+        <div id="vanta-bg" class="absolute inset-0 -z-10"></div>
+        <div class="md:col-span-7">
           <h2
             class="text-primary font-headline text-lg tracking-[0.2em] uppercase mb-6"
           >
@@ -187,9 +188,9 @@
             </a>
           </div>
         </div>
-        <div class="md:col-span-5 relative">
+        <div class="md:col-span-5">
           <div
-            class="aspect-[4/5] rounded-xl overflow-hidden bg-surface-container shadow-2xl relative group"
+            class="aspect-[4/5] rounded-xl bg-surface-container shadow-2xl relative group"
           >
             <img
               alt="Professional profile portrait"
@@ -200,11 +201,12 @@
             <div
               class="absolute inset-0 bg-primary/10 mix-blend-multiply"
             ></div>
-          </div>
-          <!-- Asymmetric background element -->
+            <!-- Asymmetric background element -->
           <div
             class="absolute -bottom-8 -left-8 w-48 h-48 bg-primary-container -z-10 rounded-xl"
           ></div>
+          </div>
+          
         </div>
       </section>
       <!-- Services & Tech Stack Section -->
@@ -618,5 +620,23 @@
         />
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.js" integrity="sha512-+maVcOki4j7Zo1VOqbhjH/fKV7iuE9WYMdhObx1ozxz2xu3qZMVCGHOAZKLKLksakyaWllQzafnLZSGBRl3lRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.waves.min.js" integrity="sha512-gqHa0ICeg1WCe5rOOlxMjC1lXvXN3350qWwbePm2HV/pu2Qas+Nswuc+Eb62NZ/JOpMmOhZk4Chaak3twaBRRQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      VANTA.WAVES({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xa0a0a,
+        waveHeight: 9.50,
+        waveSpeed: 0.80,
+        zoom: 0.99
+      })
+  </script>
   </body>
 </html>
