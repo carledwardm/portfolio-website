@@ -531,7 +531,7 @@
               </div>
             </div>
           </div>
-          <form class="space-y-6">
+          <form class="space-y-6" action="https://formspree.io/f/mykbjonq" method="POST">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="space-y-2">
                 <label
@@ -542,6 +542,7 @@
                   class="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-on-surface-variant/30 transition-all duration-300 outline-none"
                   placeholder="John Doe"
                   type="text"
+                  name="name"
                 />
               </div>
               <div class="space-y-2">
@@ -553,6 +554,7 @@
                   class="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-on-surface-variant/30 transition-all duration-300 outline-none"
                   placeholder="john@example.com"
                   type="email"
+                  name="email"
                 />
               </div>
             </div>
@@ -565,6 +567,7 @@
                 class="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-on-surface-variant/30 transition-all duration-300 outline-none"
                 placeholder="Project Inquiry"
                 type="text"
+                name="subject"
               />
             </div>
             <div class="space-y-2">
@@ -576,6 +579,7 @@
                 class="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-on-surface-variant/30 transition-all duration-300 outline-none"
                 placeholder="Tell me about your project..."
                 rows="5"
+                name="message"
               ></textarea>
             </div>
             <button
