@@ -598,7 +598,7 @@
           Carl Millard
         </div>
         <div class="text-center md:text-right">
-          © 2026 Carl Millard. Built with Intent.
+          © <span id="copyrightYear">2026</span> Carl Millard. Built with Intent.
         </div>
       </div>
     </footer>
@@ -642,6 +642,9 @@
         shininess: 55.00,
         zoom: 0.99
       })
+      
+      document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+
   </script>
   </body>
 </html>
